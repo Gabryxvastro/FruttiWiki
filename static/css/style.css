@@ -1,0 +1,332 @@
+body {
+    font-family: Arial, sans-serif;
+    /* La famiglia del font */
+    font-size: 11px;
+    /* La dimensione del font principale nei tag <p></p> */
+    background-color: #fb009b;
+    /* Il colore dello sfondo della pagina web */
+    color: #35fc0dc6;
+    /* Il colore del testo */
+}
+
+h1 {
+    color: #35fc0dc6;
+    /* Il colore dell'intestazione */
+    font-size: 24px;
+    /* La dimensione del font dell'intestazione */
+    font-family: Georgia, serif;
+    /* La famiglia del font usata nell'intestazione */
+}
+
+.titolo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+nav {
+    position: fixed;
+    right: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    font-size: 26px;
+    color:#00ffff
+}
+
+/*
+<ul class="frutti">
+{% for frutto in frutti %}
+<li class="frutto-it">
+  <img src="../static/images/{{ frutto[0] }}">
+  <h3>{{ frutto[1][:-1] }}</h3>
+  <p>{{ frutto[2] }}</p>
+</li>
+{% endfor %}
+</ul>
+*/
+.frutti {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.frutto-it {
+    align-items: center;
+    border-radius: 15px;
+}
+
+.frutto-it img {
+    border-radius: 15px;
+}
+
+@keyframes arcobaleno-animato {
+    0% {
+        background: linear-gradient(45deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+
+    15% {
+        background: linear-gradient(45deg,
+                #ff0080,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff)
+    }
+
+    30% {
+        background: linear-gradient(45deg,
+                #8000ff,
+                #ff0080,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff);
+    }
+
+    45% {
+        background: linear-gradient(45deg,
+                #0000ff,
+                #8000ff,
+                #ff0080,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff);
+    }
+
+    60% {
+        background: linear-gradient(45deg,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00);
+    }
+
+    75% {
+        background: linear-gradient(45deg,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080,
+                #ff0000,
+                #ff8000,
+                #ffff00);
+    }
+
+    90% {
+        background: linear-gradient(45deg,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080,
+                #ff0000,
+                #ff8000);
+    }
+
+    100% {
+        background: linear-gradient(45deg,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080,
+                #ff0000);
+    }
+}
+
+@keyframes arcobaleno-ruota {
+    0% {
+        background: linear-gradient(45deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+
+    10% {
+        background: linear-gradient(60deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+
+    20% {
+        background: linear-gradient(75deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+
+    30% {
+        background: linear-gradient(90deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+
+    40% {
+        background: linear-gradient(105deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+    50% {
+        background: linear-gradient(120deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+    60% {
+        background: linear-gradient(135deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+    70% {
+        background: linear-gradient(150deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+    80% {
+        background: linear-gradient(165deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+    90% {
+        background: linear-gradient(180deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+    100% {
+        background: linear-gradient(195deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    }
+}
+
+
+.container-frutto {
+    padding: 10px;
+    background: linear-gradient(45deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    border-radius: 15px;
+}
+
+.container-frutto:hover {
+    padding: 10px;
+    animation: arcobaleno-animato 0.5s infinite;
+    border-radius: 15px;
+}
+
+.container-frutto-r {
+    padding: 10px;
+    background: linear-gradient(45deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #00ff00,
+                #00ffff,
+                #0000ff,
+                #8000ff,
+                #ff0080);
+    border-radius: 15px;
+}
+
+.container-frutto-r:hover {
+    padding: 10px;
+    animation: arcobaleno-ruota 0.5s infinite;
+    border-radius: 15px;
+}

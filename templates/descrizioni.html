@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>FruttiWiki</title>
+</head>
+
+<body>
+  <div class="titolo">
+    <h1>Ecco a te {{ articolo }}</h1>
+    <h1 class="frutto">{{ frutto_random }}</h1>
+    <h1>! TA DA</h1>
+  </div>
+  <img src="../static/images/{{ nome_file }}">
+  <div class="descr">
+    {{ descrizione }}
+  </div>
+
+  <style>
+    img {
+      max-width: 400px;
+    }
+  
+    .frutto {
+      color: rgb(0, 255, 255);
+    }
+  </style>
+  <h2>{{ articolo }} {{ frutto_random }} </h2>
+</body>

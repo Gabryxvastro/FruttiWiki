@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>FruttiWiki</title>
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>HOME</li>
+      <li>IMPOSTAZIONI</li>
+      <li>CHI SIAMO</li>
+    </ul>
+  </nav>
+  <div class="titolo">
+    <h1>Ecco a te {{ articolo }}</h1>
+    <h1 class="frutto">{{ frutto_random }}</h1>
+    <h1>! TA DA</h1>
+  </div>
+  <img src="../static/images/{{ nome_file }}">
+  <a href="/descrizioni">Vuoi una descrizione completa? Clicca questo link che ti portera a tutte le descrizioni dei frutti.</a>
+  <p>Ho tanti frutti, ecco una lista</p>
+  <ul class="frutti">
+    {% for frutto in frutti %}
+    {% if random.randint(0, 999) < 1 %}
+    <div class="container-frutto-r">
+    {% else %}
+    <div class="container-frutto">
+    {% endif %}
+      <a class="frutto-it" href="/descrizione/{{ frutto[3] }}">
+        <img src="../static/images/{{ frutto[0] }}">
+        <h2>{{ frutto[1][:-1] }}</h2>
+        <p>{{ frutto[2] }}</p>
+      </a>
+    </div>
+    {% endfor %}
+  </ul>
+</body>
+
+
+<style>
+  img {
+    max-width: 400px;
+  }
+
+  .frutto {
+    color: rgb(0, 255, 255);
+  }
+</style>
+
+</html>
